@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Udayan's Portfolio</title>
+    <link rel="icon" href="android-chrome-512x512.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/da29568d26.js" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/js/all.min.js" crossorigin="anonymous"></script> -->
+</head>
+
+<body>
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="udayanlogo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I'm <span>Udayan Nath Tripathi</span> <br>from Delhi, India. </h1>
+            </div>
+            <video id="header-video" autoplay muted loop playsinline>
+                <source src="2611250-uhd_3840_2160_30fps (online-video-cutter.com).mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+    <!---------------------about------------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+
+                <div class="about-col-1">
+                    <img src="file (1)-Photoroom.png-Photoroom.png" alt="" id="user-image" class="user-image">
+                </div>
+                <div class="about-col-2">
+                    <div class="about-me" id="about-me">
+                        <h1 class="sub-title">About me</h1>
+
+                        <p>Passionate undergraduate with a burgeoning interest in web development. Eager to learn, I thrive on challenges and am dedicated to mastering coding fundamentals. Excited to contribute and grow within your team, leveraging my enthusiasm to tackle projects head-on. Each obstacle fuels my passion to learn and excel. Let's build something great together!
+                        </p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Programming</span><br>Can code in various languages like Java, C, HTML, SQL</li>
+                                <li><span>Web Development</span><br>Skilled in basic web development languages such as HTML, CSS, and JavaScript. Capable of designing and customizing web pages. Continuously enhancing proficiency through practice and learning.</li>
+                                <li><span>Soft Skills</span><br>Proficient in communication, teamwork, adaptability, and leadership. Skilled in navigating challenges and fostering collaboration to drive impactful outcomes in both professional and personal capacities.</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>April 2023 - May 2023</span><br>Completed online training in web development from Acmegrade, Mood Indigo, IIT Bombay.</li>
+                                <li><span>January 2024</span><br>Hackathon Finalist (Randomize MUJ)</li>
+
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>B.Tech in Computer Science Engineering </span><br>Manipal University Jaipur
+                                    (2022-2026)</li>
+                                <li><span>Schooling</span><br>Kulachi Hansraj Model School(2009-2022)</li>
+
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---------------------------services------------------------------>
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-chart-simple"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel quas quos similique iure eveniet consequuntur voluptatem sapiente repellendus hic, tenetur recusandae et obcaecati sequi nesciunt ab libero architecto veritatis dolor!</p>
+                    <a href="#contact">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-microchip"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae unde odit, tempore possimus accusantium ullam fugit similique debitis dicta, eos illum esse optio reprehenderit animi. Veritatis voluptates dignissimos dolores vel!</p>
+                    <a href="#contact">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>App Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione reprehenderit alias harum, magnam eius ab, magni mollitia distinctio in debitis ex non repudiandae excepturi asperiores facere ipsam nobis tenetur rem!</p>
+                    <a href="#contact">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------------------portfolio-------------------------------------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="work-1.png" alt="">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The app connects you to talented people around the world. Download it from pLay store.</p>
+                        <a href="#" target="_blank"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work-2.png" alt="">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>The app connects you to talented people around the world. Download it from pLay store.</p>
+                        <a href="#" target="_blank"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work-3.png" alt="">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>The app connects you to talented people around the world. Download it from pLay store.</p>
+                        <a href="#" target="_blank"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" target="_blank" class="btn">See more</a>
+        </div>
+    </div>
+    <!-------------------------------------contact------------------------------------------>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i> <a href="mailto:contactudayan16@gmail.com"
+                            target="_blank">contactudayan16@gmail.com</a></p>
+                    <p><i class="fa-solid fa-phone"></i> 9650661692</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/udayan-tripathi-b15058254/"
+                            target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/udayan1611" target="_blank"><i
+                                class="fa-brands fa-square-github"></i></a>
+                        <a href="https://www.instagram.com/udayanfr/?next=%2F" target="_blank"><i
+                                class="fa-brands fa-square-instagram"></i></a>
+                    </div>
+
+                    <div class="download"><a
+                            href="Udayan Nath Tripathi(4_5_2024) (1).pdf"
+                            target="_blank" class="btn btn2">View Resume</a>
+                    </div>
+
+                </div>
+                <div class="contact-right">
+                     
+                    <!-- <div class="alert">Your Message Sent Successfully :))</div> -->
+                    <form action="https://api.web3forms.com/submit" method="POST" name="form" id="contactForm">
+                        <input type="hidden" name="access_key" value="9ebc0a01-f6fe-4568-b1e4-f4ae7dff2c3b">
+                        <input type="text" name="Name" id="nAme" placeholder="Your Name" required>
+                        <input type="email" name="Email" id="eMail" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" id="Msgc" placeholder="Your Message"></textarea>
+                        <button type="submit" id="mysubmit" class="btn btn2">Submit</button>
+                    </form>
+                  
+                </div>
+
+            </div>
+
+        </div>
+
+        <a href="#header" class="back-to-top"><i class="fa-solid fa-square-caret-up"></i></a>
+
+        <div class="copyright">
+            <p>Copyright © Udayan. All rights reserved</p>
+        </div>
+    </div>
+
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links")
+        var tabcontents = document.getElementsByClassName("tab-contents")
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+
+    </script>
+
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu")
+
+        function openmenu() {
+            sidemenu.style.left = "0";
+        }
+        function closemenu() {
+            sidemenu.style.left = "-200px";
+        }
+
+
+    </script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+
+
+    <script src="./mail.js"></script>
+
+
+</body>
+
+</html>
